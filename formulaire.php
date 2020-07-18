@@ -14,7 +14,7 @@
     <form action="dbconnect.php" method="post" class="container">
       <h1>Inscription</h1>
 
-     
+   
       Nom : <input type="text" name="Nom"/></br>
    Prenom : <input type="text" name="Prenom"> </br>
   Email: <input type="text" name="Email"></br>
@@ -23,34 +23,13 @@
   Numero : <input type="number" name="Numero"></br>
   instru : <input type="text" name="instru"></br>
   Prix : <input type="number" name="Prix"></br>
-  <a href="formulairesuite.html">Suivant>></a>
-      <button type="submit" class="bouton">Suivant<a href="formulairesuite.html"></a></button>
-    </form>
-    <?php
-    $user = new instrument("getNom()", "getPrenom()","getInstru()",getPrix(),"getEmail()");
-?>
 
- <? php $to  = "getEmail()";
-  
-$subject  = "Email de confirmation" ;
-  
-  
-$message  .= "<h2> Cher(e) "getNom()", "getPrenom()" </h2> </br>
-<h3> nous avons recu votre commande de l'instrument "getInstru()" de prix getPrix()</h3>";
-  
-$header  = "From:customerservices@gmail.com \r\n" ;
-  
-  $retval  =mail  ( $to , $subject , $message , $header );
-  
- if ($retval  == true ) {
-  echo 
- "Message envoyé..." ;
- }
- else
- {
-  echo 
- "Message non envoyé..." ;  
- }
+
+  <button type="submit" class="bouton">Envoyer<a href="formulairesuite.html"></a></button>
+ <a href="formulairesuite.html">Informations Bancaires</a>
+    </form>
+
+    
   </div>
 </body>
 </html>

@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="dbconnect.css">
+</head>  
+<body>
 <?php
 try{
 	$connexion = new PDO('mysql:host=localhost; dbname=instrument','root','');
@@ -21,7 +28,8 @@ $pdoconnect->execute(array(
 
 ));
 
-$affiche = 'Votre formulaire a bien été enregistré.Vous recevrez un email de confirmation...';
+$affiche ='Votre formulaire a bien été enregistré.Vous recevrez un email de confirmation...</br>
+Veuillez retourner a la page precedente pour rentrer vos informations bancaires.';
 echo $affiche;
 
 
@@ -86,3 +94,5 @@ echo $affiche;
       }
    }
 ?>
+</body>
+</html>

@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
   <link rel="stylesheet" href="second.css">
 	<title>Sitegroupe.html</title>
+ </head> 
 <body>
 
 <div class="header">
-  <a href="#default" class="logo">Site</a>
+  <a href="#default" class="logo">I-MUSIC</a>
 <div class="header-right">
   <a class="active" href="#home">Accueil</a>
   <a href="#contact">Contact</a>
@@ -15,7 +16,7 @@
 </div>
  
 <div class="row"> 
-  <img src="image/slider.jpg" style="width:100%">
+  <img src="image/DJ.jpg" style="width:100%">
 </div>
 
 <div class="sticky">Nos tendances</div>
